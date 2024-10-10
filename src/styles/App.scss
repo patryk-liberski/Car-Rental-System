@@ -1,0 +1,33 @@
+@import './variables';
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $secondary-color;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+
+  .column {
+    flex: 1;
+    margin: 0 10px;
+    max-width: 50%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &.single-column .column {
+    max-width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

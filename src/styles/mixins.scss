@@ -1,0 +1,34 @@
+@mixin button-base($background-color, $hover-color) {
+    background-color: $background-color;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color $transition-time;
+  
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+  
+  @mixin input-base {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-size: 16px;
+  
+    &:focus {
+      border-color: $primary-color;
+      outline: none;
+    }
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
